@@ -6,8 +6,13 @@ int main() {
     int c=0;  
     int i=1;  
 
-    cout<<"Ingrese el primer numero: "; cin>>n1;
-    cout<<"Ingrese el segundo numero: "; cin>>n2;
+    do {
+        cout<<"Ingrese el primer numero: "; cin>>n1;
+        cout<<"Ingrese el segundo numero: "; cin>>n2;
+        if (n1<=0 || n2<=0) {
+            cout<<"Los numeros deben ser positivos."<<endl<<endl;
+        }
+    } while (n1<=0 || n2<=0);
 
     while (i<=n1 && i<=n2) {
         if (n1%i==0 && n2%i==0) 
