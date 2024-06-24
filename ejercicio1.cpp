@@ -10,17 +10,27 @@ int main(){
     switch(op){
         case '+':
             r=op1+op2;
+            cout<<"El resultado es: "<<r<<endl;
         break;
         case '-':
             r=op1-op2;
+            cout<<"El resultado es: "<<r<<endl;
         break;
         case '*':
             r=op1*op2;
+            cout<<"El resultado es: "<<r<<endl;
         break;
         case '/':
-            r=op1/op2;
+            if(op2!=0){
+                r=op1/op2;
+                cout<<"El resultado es: "<<r<<endl;
+            }
+            else 
+                cout<<"No se puede dividir entre cero."<<endl;
+        break;
+        default:
+            cout<<"Operador no valido."<<endl;
         break;
 	}
-    cout<<"El resultado es: "<<r<<endl;
     return 0;
 }
