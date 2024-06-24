@@ -7,7 +7,11 @@ int factorial(int);
 int main(){
     float n, sum;
     char cn;
+
+    do{
     cout<<"Ingrese un numero para la operacion: "; cin>>n;
+    } while (n<=0);
+
     sum=suma(n);
     cout<<"La sumatoria es: "<<sum<<endl;
     return 0;
